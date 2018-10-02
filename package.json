@@ -1,0 +1,29 @@
+{
+  "name": "tcp-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test:run": "mocha",
+    "test": "npm run test:run",
+    "test:dev": "npm run test:run -- -w",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephaniesmith/tcp-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "jest": "^23.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/stephaniesmith/tcp-chat/issues"
+  },
+  "homepage": "https://github.com/stephaniesmith/tcp-chat#readme"
+}
