@@ -21,4 +21,15 @@ describe('Clinets', () => {
         assert.equal(c2.username, 'user2');
         assert.equal(c3.username, 'user3');
     });
+
+    it('stores clients', () => {
+        const allClients = clients.getAll();
+        assert.deepEqual(allClients, [c1, c2, c3]);
+    });
+
+    it('removes a client', () => {
+        clients.remove(c2);
+        const allClients = clients.getAll();
+        assert.deepEqual(allClients, [c1, c3]);
+    });
 });
