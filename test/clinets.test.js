@@ -32,4 +32,9 @@ describe('Clinets', () => {
         const allClients = clients.getAll();
         assert.deepEqual(allClients, [c1, c3]);
     });
+
+    it('gives back list of clients (minus sender)', () => {
+        const broadcast = clients.getBroadcastClients(c1);
+        assert.deepEqual(broadcast, [c2, c3]);
+    });
 });
