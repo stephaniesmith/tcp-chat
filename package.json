@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test:run": "mocha",
+    "test:run": "jest",
     "test": "npm run test:run",
-    "test:dev": "npm run test:run -- -w",
+    "test:watch": "npm run test:run -- --watch",
     "start": "node server.js"
   },
   "repository": {
