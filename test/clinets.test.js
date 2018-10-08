@@ -27,6 +27,11 @@ describe('Clinets', () => {
         assert.deepEqual(allClients, [c1, c2, c3]);
     });
 
+    it('gets a client', () => {
+        const res = clients.get(c1.username);
+        assert.deepEqual(res, c1);
+    });
+
     it('removes a client', () => {
         clients.remove(c2);
         const allClients = clients.getAll();
